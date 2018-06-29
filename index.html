@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Exploring DOM</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="application/javascript" src="./sample-script.js"></script>
+	</head>
+	<body>
+		<p>This is the main window</p>
+		<button onclick="showDialog()">Show Dialog</button>
+		<div id="glass" class="glass">
+			<div class="dialog">
+				<h3>Prompt</h3>
+				<p>How many pets do you have?</p>
+				<input type="number" value="0" id="numPets" />
+				<button id="dialogOK" type="submit" onclick="OK()">OK</button>
+			</div>
+		</div>
+		<div>
+			<iframe src="https://www.lipsum.com/" allowfullscreen="" sandbox=""></iframe>
+		</div>
+	</body>
+</html>
